@@ -12,17 +12,16 @@
 
 ## Установка
 1. Склонировать репозиторий
-    git clone https://github.com/polionish/aliot-module-hub.git
+    `git clone https://github.com/polionish/aliot-module-hub.git`
 2. Перейти в директорию проекта
-    cd aliot-site-of-modules
+    `cd aliot-site-of-modules`
 3. Установить зависимости (указаны в package.json)
-    npm install
+    `npm install`
 4. Запустить проект
-    npm run dev
-5. Открыть в браузере адрес, указанный в консоли 
-    http://localhost:5173 (по умолчанию vite использует 5173)
+    `npm run dev`
+5. Открыть в браузере адрес, указанный в консоли (по умолчанию vite использует 5173): `http://localhost:5173`
 6. Можно обновить jsdoc-документацию
-    npm run jsdoc
+    `npm run jsdoc`
 
 ## Зависимости
 
