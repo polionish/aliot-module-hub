@@ -2,18 +2,37 @@
 Расширение экосистемы умного дома Яндекса.
 
 ## Структура
-- `index.html`: Основная разметка.
+- `index.html`: Основная разметка сайта.
 - `styles.css`: Стили сайта.
-- `swiper-config.js`: Инициализация карусели.
-- `module-handlers.js`: Обработка кликов по модулям.
-- `scroll-handler.js`: Управление прокруткой.
+- `swiper-config.mjs`: Настройка карусели (Swiper).
+- `module-handlers.mjs`: Обработка кликов по модулям.
+- `scroll-handler.mjs`: Управление прокруткой.
+- `main.mjs`: Главный скрипт приложения.
+- `config.mjs`: Конфигурация проекта.
 
 ## Установка
-1. Склонировать репозиторий.
-2. Открыть `index.html` в браузере.
+1. Склонировать репозиторий
+    git clone https://github.com/polionish/aliot-module-hub.git
+2. Перейти в директорию проекта
+    cd aliot-site-of-modules
+3. Установить зависимости (указаны в package.json)
+    npm install
+4. Запустить проект
+    npm run dev
+5. Открыть в браузере адрес, указанный в консоли 
+    http://localhost:5173 (по умолчанию vite использует 5173)
+6. Можно обновить jsdoc-документацию
+    npm run jsdoc
 
 ## Зависимости
-- Swiper: `https://unpkg.com/swiper/swiper-bundle.min.js`
-- TailwindCSS: `https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css`
+
+- **Swiper** (`^11.2.5`)  
+  Библиотека для слайдеров (каруселька с карточками). Устанавливается через `npm install`.
+
+- **TailwindCSS** (`^2.2.19`)  
+  Фреймворк стилей. ?
+
+- **Vite** (`^6.2.2`) и **JSDoc** (`^4.0.4`)  
+  Dev-зависимости для разработки и документации. Устанавливаются через `npm install`.
 
 

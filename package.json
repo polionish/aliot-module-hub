@@ -14,7 +14,7 @@
     "smart-home",
     "modules"
   ],
-  "author": "Ваше имя",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "swiper": "^11.2.5"
