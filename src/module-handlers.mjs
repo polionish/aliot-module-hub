@@ -12,7 +12,7 @@ const openModule = (moduleId, moduleContents, smoothScrollTo) => {
         activeModule.classList.add('active');
         const moduleDetails = document.getElementById('module-details');
         const targetPosition = moduleDetails.getBoundingClientRect().top + window.scrollY;
-        smoothScrollTo(targetPosition, CONFIG.ANIMATION_DURATION); // Используем переданную функцию
+        smoothScrollTo(targetPosition, CONFIG.ANIMATION_DURATION);
         setTimeout(() => {
             isModuleOpening = false;
         }, CONFIG.ANIMATION_DURATION);
