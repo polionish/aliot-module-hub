@@ -1,0 +1,26 @@
+{
+  "name": "aliot-site-of-modules",
+  "version": "1.0.0",
+  "description": "Сайт модулей для экосистемы умного дома Яндекса",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "keywords": [
+    "yandex-iot",
+    "smart-home",
+    "modules"
+  ],
+  "author": "Ваше имя",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^11.2.5"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.4",
+    "vite": "^6.2.2"
+  }
+}

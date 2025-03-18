@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Modules</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay">
+        <svg class="grid-pattern" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#58a6ff" stroke-width="1"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)"/>
+        </svg>
+    </div>
+
+    <div id="preloader" class="preloader"></div>
+    
+    <header>
+        <div class="header-content">
+            <h1>Yandex IoT Modules</h1>
+            <p>Дополнения для экосистемы умного дома Яндекса</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Управляйте умным домом легко</h2>
+        <p>Инструменты для сценариев, мониторинга и интеграций</p>
+    </section>
+
+    <section class="cards" id="cards">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-module="module1">
+                    <h3>Бот для мониторинга</h3>
+                    <p>Получайте уведомления о состоянии дома в реальном времени</p>
+                    <button class="module-btn">Подробнее</button>
+                </div>
+                <div class="swiper-slide" data-module="module2">
+                    <h3>Бот для сценариев</h3>
+                    <p>Делитесь сценариями с гостями через ссылки</p>
+                    <button class="module-btn">Подробнее</button>
+                </div>
+                <div class="swiper-slide" data-module="module3">
+                    <h3>Расширение для браузера</h3>
+                    <p>Управляйте YAML-сценариями прямо в браузере</p>
+                    <button class="module-btn">Подробнее</button>
+                </div>
+                <div class="swiper-slide" data-module="module4">
+                    <h3>Плагин для Obsidian</h3>
+                    <p>Редактируйте сценарии с подсветкой кода</p>
+                    <button class="module-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="module-details" id="module-details">
+        <div class="module-content" id="module1">
+            <button class="close-btn">✕</button>
+            <h2>Telegram Bot для мониторинга и уведомлений</h2>
+            <p>Этот модуль предоставляет обновления в реальном времени о состоянии вашего умного дома через Telegram. Используя Telegram Bot API и Yandex API, бот периодически проверяет состояние устройств и отправляет персонализированные уведомления на основе заданных условий.</p>
+            <h3>Возможности</h3>
+            <ul>
+                <li>Мониторинг состояния устройств в реальном времени.</li>
+                <li>Настраиваемые уведомления с использованием естественного языка.</li>
+                <li>Интеграция с Google Calendar для уведомлений по событиям.</li>
+            </ul>
+            <h3>Установка</h3>
+            <ol>
+                <li>Добавьте бота в Telegram через уникальную ссылку.</li>
+                <li>Настройте доступ к Yandex API в настройках бота.</li>
+                <li>Задайте условия уведомлений с помощью команд.</li>
+            </ol>
+        </div>
+        <div class="module-content" id="module2">
+            <button class="close-btn">✕</button>
+            <h2>Telegram Bot для шаринга сценариев</h2>
+            <p>Этот модуль упрощает выполнение сценариев умного дома для внешних пользователей. Он позволяет генерировать уникальные ссылки для предустановленных сценариев, которые можно безопасно делиться с гостями без предоставления прямого доступа к системе.</p>
+            <h3>Возможности</h3>
+            <ul>
+                <li>Создание ссылок для сценариев умного дома.</li>
+                <li>Удобное управление для гостей.</li>
+            </ul>
+            <h3>Установка</h3>
+            <ol>
+                <li>Установите бота через Telegram.</li>
+                <li>Создайте сценарий в приложении Яндекса.</li>
+                <li>Сгенерируйте ссылку с помощью команды бота.</li>
+            </ol>
+        </div>
+        <div class="module-content" id="module3">
+            <button class="close-btn">✕</button>
+            <h2>Расширение для браузера (YAML)</h2>
+            <p>Этот модуль позволяет управлять сценариями на основе YAML прямо из браузера. Оно интегрируется с веб-интерфейсом Yandex IoT, обеспечивая синхронизацию конфигураций между локальными папками и облаком Яндекса.</p>
+            <h3>Возможности</h3>
+            <ul>
+                <li>Импорт и экспорт YAML-сценариев.</li>
+                <li>Синхронизация с облаком Яндекса.</li>
+            </ul>
+            <h3>Установка</h3>
+            <ol>
+                <li>Установите расширение из магазина браузера.</li>
+                <li>Авторизуйтесь в Yandex IoT.</li>
+                <li>Загрузите YAML-файл через интерфейс расширения.</li>
+            </ol>
+        </div>
+        <div class="module-content" id="module4">
+            <button class="close-btn">✕</button>
+            <h2>Плагин для Obsidian</h2>
+            <p>Этот плагин превращает Obsidian в среду разработки для редактирования YAML-сценариев. Он предлагает подсветку синтаксиса и контроль версий, что идеально для продвинутых пользователей.</p>
+            <h3>Возможности</h3>
+            <ul>
+                <li>Подсветка синтаксиса YAML.</li>
+                <li>Контроль версий сценариев.</li>
+            </ul>
+            <h3>Установка</h3>
+            <ol>
+                <li>Скачайте плагин из репозитория Obsidian.</li>
+                <li>Добавьте его в настройки Obsidian.</li>
+                <li>Начните редактировать YAML-файлы.</li>
+            </ol>
+        </div>
+    </section>
+
+    <script type="module" src="main.mjs"></script>
+</body>
+</html>
